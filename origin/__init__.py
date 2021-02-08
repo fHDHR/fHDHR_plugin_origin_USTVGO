@@ -25,6 +25,9 @@ class Plugin_OBJ():
     def __init__(self, plugin_utils):
         self.plugin_utils = plugin_utils
 
+        self.tuners = self.plugin_utils.config.dict["ustvgo"]["tuners"]
+        self.stream_method = self.plugin_utils.config.dict["ustvgo"]["stream_method"]
+
         self.wmsAuthSign = "c2VydmVyX3RpbWU9MS8xMS8yMDIxIDI6NTc6MjcgUE0maGFzaF92YWx1ZT0ySDQyUEQveTdkZUlzUnZnVnI2cFlnPT0mdmFsaWRtaW51dGVzPTI0MA=="
 
     def get_channels(self):
