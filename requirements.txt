@@ -1,3 +1,2 @@
-selenium
-selenium-wire
-lxml
+simplejson
+flask
