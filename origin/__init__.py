@@ -5,14 +5,6 @@ class Plugin_OBJ():
     def __init__(self, plugin_utils):
         self.plugin_utils = plugin_utils
 
-    @property
-    def tuners(self):
-        return self.plugin_utils.config.dict["ustvgo"]["tuners"]
-
-    @property
-    def stream_method(self):
-        return self.plugin_utils.config.dict["ustvgo"]["stream_method"]
-
     def get_channels(self):
 
         channels_url = "https://ustvgo.tv/tvguide/national.json"
