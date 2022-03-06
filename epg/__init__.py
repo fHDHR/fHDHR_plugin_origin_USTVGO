@@ -21,8 +21,8 @@ class Plugin_OBJ():
 
         pulltime = datetime.datetime.combine(todaydate, datetime.time(0, 0)).timestamp()
 
-        for fhdhr_id in list(self.channels.list[self.plugin_utils.namespace].keys()):
-            chan_obj = self.channels.list[self.plugin_utils.namespace][fhdhr_id]
+        for fhdhr_channel_id in list(self.channels.list[self.plugin_utils.namespace].keys()):
+            chan_obj = self.channels.list[self.plugin_utils.namespace][fhdhr_channel_id]
 
             if str(chan_obj.number) not in list(programguide.keys()):
                 programguide[str(chan_obj.number)] = chan_obj.epgdict
